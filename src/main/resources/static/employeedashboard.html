@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medarbejder Dashboard</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script defer src="/js/admin-dashboard.js"></script>
+</head>
+<body>
+<h1>Medarbejder Dashboard</h1>
+
+<h2>Medarbjder liste</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Navn</th>
+        <th>Email</th>
+        <th>Rolle</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody id="employeeTable"></tbody>
+</table>
+
+<h2>Reservationer</h2>
+<table border="1" id="reservationSection">
+    <thead>
+    <tr>
+        <th>Kunde Name</th>
+        <th>Email</th>
+        <th>Aktivitet</th>
+        <th>Tid</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody id="reservationTable"></tbody>
+</table>
+
+<h2>Add ny medarbejder</h2>
+<form id="addEmployeeForm">
+    <input type="text" id="employeeName" placeholder="Name" required>
+    <input type="email" id="employeeEmail" placeholder="Email" required>
+    <select id="employeeRole">
+        <option value="ADMIN">Admin</option>
+        <option value="EMPLOYEE">Employee</option>
+    </select>
+    <button type="submit">Add Employee</button>
+</form>
+</body>
+</html>
