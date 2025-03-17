@@ -1,29 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="da">
 <head>
-    <title>Book en Aktivetet</title>
+    <meta charset="UTF-8">
+    <title>Book en Aktivitet</title>
+    <link rel="stylesheet" href="/css/styles.css">
     <script defer src="/js/booking.js"></script>
 </head>
 <body>
-<h1>AdventureXP - Book en Aktivetet</h1>
-<form id="bookingForm">
-    <label>Name:</label>
-    <input type="text" id="userName" required>
-    <br>
+<div class="booking-container">
+    <div class="booking-box">
+        <h2>Book en Aktivitet</h2>
+        <form id="bookingForm">
+            <label>Navn:</label>
+            <input type="text" id="userName" required>
 
-    <label>Email:</label>
-    <input type="email" id="userEmail" required>
-    <br>
+            <label>Telefonnummer:</label>
+            <input type="number" id="userNumber" required>
 
-    <label>Activity:</label>
-    <select id="activityDropdown"></select>
-    <br>
+            <label>Aktivitet:</label>
+            <select id="activityDropdown"></select>
 
-    <label>Reservation Time:</label>
-    <input type="datetime-local" id="reservationTime" required>
-    <br>
+            <label>Reservationstid:</label>
+            <input type="datetime-local" id="reservationTime" required>
 
-    <button type="submit">Submit Reservation</button>
-</form>
+            <button type="submit">Send Reservation</button>
+        </form>
+    </div>
+</div>
 </body>
 </html>
+

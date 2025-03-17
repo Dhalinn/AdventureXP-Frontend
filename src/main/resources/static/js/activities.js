@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json())
         .then(data => {
             const activityTable = document.getElementById("activityTable");
-            activityTable.innerHTML = ""; // Clear existing content
+            activityTable.innerHTML = "";
 
             data.forEach(activity => {
                 let row = `<tr>
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <td>${activity.description}</td>
                     <td>${activity.ageLimit}</td>
                     <td>${activity.price} DKK</td>
-                    <td><a href="/booking?activityId=${activity.id}">Book Now</a></td>
+                    <td><a href="/booking.html?activityId=${activity.id}">Book Nu!</a></td>
                 </tr>`;
                 activityTable.innerHTML += row;
             });
