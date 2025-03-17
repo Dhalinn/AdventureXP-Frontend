@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => console.error("Error fetching activities:", error));
 
     document.getElementById("bookingForm").addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent page refresh
+        event.preventDefault(); //
 
         const bookingData = {
             userName: document.getElementById("userName").value,
@@ -41,7 +41,7 @@ document.getElementById("bookingForm").addEventListener("submit", function (even
 
     if (userName === "" || userEmail === "" || reservationTime === "") {
         alert("Feltet skal udfyldes");
-        event.preventDefault(); // Stop form submission
+        event.preventDefault();
         return;
     }
 

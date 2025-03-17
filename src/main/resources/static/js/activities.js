@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json())
         .then(data => {
             const activityTable = document.getElementById("activityTable");
-            activityTable.innerHTML = ""; // Clear existing content
+            activityTable.innerHTML = "";
 
             data.forEach(activity => {
                 let row = `<tr>
